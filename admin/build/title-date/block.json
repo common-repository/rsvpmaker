@@ -1,0 +1,57 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "rsvpmaker/title-date",
+  "title": "RSVPMaker Title + Date",
+  "icon": "calendar-alt",
+  "category": "rsvpmaker",
+  "description": "One-line link to event with title and date",
+  "keywords": [
+    "RSVPMaker",
+    "Events",
+    "Listing"
+  ],
+  "version": "1",
+  "attributes": {
+    "show_time": {
+      "type": "boolean",
+      "default": false
+    },
+    "align": {
+      "type": "string",
+      "default": ""
+    },
+    "bold": {
+      "type": "boolean",
+      "default": false
+    },
+    "italic": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "supports": {
+    "html": false,
+    "spacing": {
+      "margin": true,
+      "padding": true
+    },
+    "typography": {
+      "fontSize": true,
+      "lineHeight": true
+    },
+    "color": {
+      "link": true,
+      "text": false,
+      "background": true
+    }
+  },
+  "usesContext": [
+    "postId"
+  ],
+  "textdomain": "rsvpmaker",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "render": "file:./render.php",
+  "style": "file:./style-index.css"
+}
